@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="UTF-8"/>
+        <style>
+            /*debug*/
+            .rectangle{
+              position: relative;
+              width: 100%;
+              background-color: black;
+              height: 200px;
+            }
+
+            .site-div{
+                /*background-color: gray;*/
+                margin: auto;
+                width: 640px;
+                display: block;;
+            }
+
+            .front-site-div{
+              background: black;
+              width: 100%;
+            }
+
+            .search{
+                position: absolute;
+            }
+
+            .header-table{
+              width: 100%
+            }
+
+            /*menubar*/
+            .menu-bar li{
+              /*margin-left: 100%*/
+              float:right;
+              display: inline;
+              margin:5px;
+              /*float: inherit;*/
+            }
+
+            .menu-bar a{
+              text-decoration: underline;
+            }
+
+            .menu-bar a:hover{
+              text-decoration: none;
+            }
+
+            /*img*/
+            .rectangle img{
+              margin: auto;
+              position: absolute;
+              top: 0;left:0;bottom: 0;right: 0;
+            }
+
+            .right-box{
+              position: absolute;
+              width: 320px;
+              height: 200px;
+              left: 50%;
+              background: black;
+              background: linear-gradient(to left,rgba(0,0,0,1),rgba(0,0,0,0));
+            }
+            .left-box{
+              position: absolute;
+              /*background-color: black;*/
+              width: 320px;
+              height: 200px;
+              right:50%;
+              background: black;
+              background: linear-gradient(to right,rgba(0,0,0,1),rgba(0,0,0,0));
+            }
+        </style>
+    </header>
+    <body>
+      <table align='center' width='100%'>
+
+        <!-- header -->
+        <tr>
+          <td>
+            <div class='site-div'>
+              <table class='header-table'>
+                <tr>
+                  <td>
+                    <p>
+                      <span class='site-logo'>กินแหลก</span>
+                      <span class='site-banner'>what</span>
+                    </p>
+                  </td>
+                  <td>
+                    <span>Search</span>
+                  </td>
+                </tr>
+            </table>
+            </div>
+          </td>
+        </tr>
+
+        <!-- menu bar -->
+        <tr>
+          <td>
+            <div class='site-div menu-bar'>
+                <ul>
+                  <li><a>หน้าหลัก</a></li>
+                  <li><a>ภาพอาหาร</a></li>
+                  <li><a>เกี่ยวกับเรา</a></li>
+                </ul>
+            </div>
+          </td>
+        </tr>
+
+        <!-- front key visual -->
+        <tr>
+          <td>
+            <div class='rectangle'>
+            <img src='res/front-header.png'/>
+              <div class='right-box'></div>
+              <div class='left-box'></div>
+            </div>
+          </td>
+        </tr>
+            <!-- front grid -->
+        <tr>
+          <td>
+            <div class='site-div'>grid</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class='site-div'>footer</div>
+          </td>
+        </tr>
+      </table>
+    </body>
+</html>
