@@ -3,6 +3,22 @@
     <header>
         <meta charset="UTF-8"/>
         <style>
+
+            /*header*/
+            .header-right{
+              display: block;
+            }
+
+            .header-left span{
+              display: block
+            }
+
+            .header-left{
+              /*display: block;*/
+              /*float: left;*/
+              display: inline;
+            }
+
             /*debug*/
             .rectangle{
               position: relative;
@@ -12,15 +28,20 @@
             }
 
             .site-div{
-                /*background-color: gray;*/
+                background-color:gray;
                 margin: auto;
                 width: 640px;
-                display: block;;
+                display: block;
             }
 
             .front-site-div{
               background: black;
               width: 100%;
+            }
+
+            .site-logo{
+              display: block;
+              font-size: 30px;
             }
 
             .search{
@@ -93,6 +114,15 @@
               top:0;bottom: 0;left: 0;right: 0;
               background-color: white;
               margin: 5px;
+              /*align:center;*/
+
+              display: table-cell;
+              vertical-align: middle;
+            }
+
+            .grid-content p{
+              text-align: center;
+              /*display: inline-flex;*/
             }
         </style>
     </header>
@@ -103,19 +133,24 @@
         <tr>
           <td>
             <div class='site-div'>
-              <table class='header-table'>
-                <tr>
+              <table style="display: block">
+                <tr style="background: firebrick">
                   <td>
-                    <p>
-                      <span class='site-logo'>กินแหลก</span>
-                      <span class='site-banner'>what</span>
-                    </p>
+
+                    <div class='header-left'>
+                      <span class ="site-logo">กินแหลก </span>
+                      <span>enjoy life, enjoy eating! </span>
+                    </div>
                   </td>
                   <td>
-                    <span>Search</span>
+                    <div class='header-right' >
+                      
+                      <span><input></span>  
+                      <span><button>ค้นหา</button> </span>
+                    </div>
                   </td>
                 </tr>
-            </table>
+              </table>
             </div>
           </td>
         </tr>
@@ -138,7 +173,7 @@
         <tr>
           <td>
             <div class='rectangle'>
-            <img src='res/front-header.png'/>
+              <img src='res/front-header.png'/>
               <div class='right-box'></div>
               <div class='left-box'></div>
             </div>
@@ -153,55 +188,56 @@
 
               <div class='grid-wrapper'>
                 <div class='grid-content'>
-                  hi
+                  <p>some text</p>
+                    <p>some text</p>
                 </div>
               </div>
 
               <div class='grid-wrapper'>
                 <div class='grid-content'>
-                  hi
+
                 </div>
               </div>
 
               <div class='grid-wrapper'>
                 <div class='grid-content'>
-                  hi
+
                 </div>
               </div>
 
               <div class='grid-wrapper'>
                 <div class='grid-content'>
-                  hi
+
                 </div>
               </div>
 
               <div class='grid-wrapper'>
                 <div class='grid-content'>
-                  hi
+
                 </div>
               </div>
 
               <div class='grid-wrapper'>
                 <div class='grid-content'>
-                  hi
+
                 </div>
               </div>
 
               <div class='grid-wrapper'>
                 <div class='grid-content'>
-                  hi
+
                 </div>
               </div>
 
               <div class='grid-wrapper'>
                 <div class='grid-content'>
-                  hi
+
                 </div>
               </div>
 
               <div class='grid-wrapper'>
                 <div class='grid-content'>
-                  hi
+
                 </div>
               </div>
 
