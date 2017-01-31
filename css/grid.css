@@ -1,0 +1,116 @@
+/*grid*/
+            .grid-wrapper{
+              /*background: blue;*/
+              margin: 10px;
+              font-size: 0;
+              width: 100%;
+            }
+            .grid{
+              /*background: #ecf0f1;*/
+              display: inline-block;
+              position: relative;
+              margin: 0px;
+              margin-left: -1px;
+              margin-top: -1px;
+              padding: 0px;
+              border: 1px solid black;
+              width: 32%;
+              overflow: hidden;
+              /*padding: 5%;*/
+            }
+
+            .grid:after{
+              padding-top: 80%;
+              display: block;
+              content: '';
+            }
+
+            .grid img {
+              width: 100%;
+              height: 90%;
+              overflow: hidden;
+            }
+
+            .grid-img-wrapper{
+              position: absolute;
+              margin: 10px;
+              height: 100%;
+            }
+
+            .grid-hover{
+              width: 100%;
+              height: 100%;
+              background:rgba(0,0,0,.9);
+              position: absolute;
+              display: none; 
+            }
+
+            .grid-hover h2{
+              color: white;
+              /*position: absolute;*/
+              font-size: 20px;
+              font-family: 'Open Sans', sans-serif;
+              margin-left: 10px;
+            }
+
+            .grid-hover p{
+              color: white;
+              margin-top: -15px;
+              margin-left: 10px;
+              position: absolute;
+              font-family: 'Open Sans', sans-serif;
+              font-size: 13px;
+            }
+
+            .grid:hover .grid-hover{
+              display: inline  
+            }
+
+            /*.grid::before{
+              content: " ";
+              display: inline-block;
+              width: 1%;
+              vertical-align: middle;
+            }*/
+
+            .grid-text-container{
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              /*background: red;*/
+            }
+
+            .grid-text{
+              font-size: 10px;
+              /*background: gold;*/
+              width: 100%;
+              /*margin: 5%;*/
+              /*margin: 5px;*/
+            }
+
+            .ghost-child{
+              height: 100%;
+            }
+
+            .ghost-child, .grid-text{
+              display: inline-block;
+              /*width: 100%;*/
+              vertical-align: middle;
+              /*background: blue;*/
+              position:relative;
+              /*height: 10%;*/
+            }
+
+            .grid-text p{
+              text-align: center;
+              font-size: 14px;
+              /*font-family: 'Shadows Into Light', cursive;*/
+              
+            }
+
+            .grid-text .grid-text-name{
+              text-align: right;
+              margin-right: 5%;
+              font-style: italic;
+              font-family: 'Lobster', cursive;
+            }

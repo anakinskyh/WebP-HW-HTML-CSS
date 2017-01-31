@@ -1,0 +1,26 @@
+    .footer{
+        text-align: center
+    }
+
+    .footer img{
+        display: block;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:10px;
+        margin-bottom: 10px;
+        width: 30px;
+        height: 30px;
+        opacity: 0.5;
+    }
+
+    .footer p{
+        font-size: 10px;
+        font-style: italic;
+        color:gray;
+        margin-top:-5px;
+    }
+
+    .footer .footer-copy{
+        font-style: normal;
+        font-size: 12px;
+    }

@@ -1,255 +1,211 @@
 <!DOCTYPE html>
 <html>
-    <header>
-        <meta charset="UTF-8"/>
-        <style>
+<header>
+  <meta charset="UTF-8" />
 
-            /*header*/
-            .header-right{
-              display: block;
-            }
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Kanit" />
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans|Quicksand|Shadows+Into+Light" rel="stylesheet">
 
-            .header-left span{
-              display: block
-            }
+  <link rel='stylesheet' href="css/all.css" />
+  <link rel='stylesheet' href="css/header.css" />
+  <link rel='stylesheet' href="css/menu.css" />
+  <link rel='stylesheet' href="css/image.css" />
+  <link rel='stylesheet' href="css/eater.css" />
+  <link rel='stylesheet' href="css/grid.css" />
+  <link rel='stylesheet' href='css/footer.css'/>
+</header>
 
-            .header-left{
-              /*display: block;*/
-              /*float: left;*/
-              display: inline;
-            }
+<body>
+  <table align='center' width='100%'>
 
-            /*debug*/
-            .rectangle{
-              position: relative;
-              width: 100%;
-              background-color: black;
-              height: 200px;
-            }
+    <!-- header -->
+    <tr>
+      <td>
+        <div class='site-div head-wrapper'>
+          <!--<div class='head-wrapper'>-->
+          <div class='div-left'>
+            <h1>
+              กินแหลก
+            </h1>
+            <span>
+                enjoy life, enjoy eating!
+              </span>
+          </div>
+          <div class='div-right'>
+            <span><input placeholder="ชื่ออาหาร"></span>
+            <span><button>ค้นหา</button></span>
+            <!--</div>-->
+          </div>
+        </div>
+      </td>
+    </tr>
 
-            .site-div{
-                background-color:gray;
-                margin: auto;
-                width: 640px;
-                display: block;
-            }
+    <!-- menu bar -->
+    <tr>
+      <td>
+        <div class='site-div menu-bar'>
+          <ul>
 
-            .front-site-div{
-              background: black;
-              width: 100%;
-            }
+            <li><a>เกี่ยวกับเรา</a></li>
+            <li><a>ภาพอาหาร</a></li>
+            <li><a>หน้าหลัก</a></li>
+          </ul>
+        </div>
+      </td>
+    </tr>
 
-            .site-logo{
-              display: block;
-              font-size: 30px;
-            }
+    <!-- front key visual -->
+    <tr>
+      <td>
+        <div class='rectangle'>
+          <img src='res/front-header.png' />
+          <div class='right-box'></div>
+          <div class='left-box'></div>
+          <div class='eater-wrapper'>
+            <div class='eater-top'></div>
+            <div class='eater-bottom'></div>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <!-- front grid -->
+    <tr>
+      <td>
+        <div class='site-div'>
 
-            .search{
-                position: absolute;
-            }
-
-            .header-table{
-              width: 100%
-            }
-
-            /*menubar*/
-            .menu-bar li{
-              /*margin-left: 100%*/
-              float:right;
-              display: inline;
-              margin:5px;
-              /*float: inherit;*/
-            }
-
-            .menu-bar a{
-              text-decoration: underline;
-            }
-
-            .menu-bar a:hover{
-              text-decoration: none;
-            }
-
-            /*img*/
-            .rectangle img{
-              margin: auto;
-              position: absolute;
-              top: 0;left:0;bottom: 0;right: 0;
-            }
-            .right-box{
-              position: absolute;
-              width: 321px;
-              height: 200px;
-              left: 50%;
-              background: black;
-              background: linear-gradient(to left,rgba(0,0,0,1),rgba(0,0,0,0));
-            }
-            .left-box{
-              position: absolute;
-              /*background-color: black;*/
-              width: 321px;
-              height: 200px;
-              right:50%;
-              background: black;
-              background: linear-gradient(to right,rgba(0,0,0,1),rgba(0,0,0,0));
-            }
-
-            /*grid*/
-            .grid-wrapper{
-              background: #ecf0f1;
-              display: inline-block;
-              position: relative;
-              margin: 1px;
-              padding: 1px;
-              width: 32%;
-            }
-
-            .grid-wrapper:after{
-              padding-top: 90%;
-              display: block;
-              content: '';
-            }
-
-            .grid-content{
-              position: absolute;
-              top:0;bottom: 0;left: 0;right: 0;
-              background-color: white;
-              margin: 5px;
-              /*align:center;*/
-
-              display: table-cell;
-              vertical-align: middle;
-            }
-
-            .grid-content p{
-              text-align: center;
-              /*display: inline-flex;*/
-            }
-        </style>
-    </header>
-    <body>
-      <table align='center' width='100%'>
-
-        <!-- header -->
-        <tr>
-          <td>
-            <div class='site-div'>
-              <table style="display: block">
-                <tr style="background: firebrick">
-                  <td>
-
-                    <div class='header-left'>
-                      <span class ="site-logo">กินแหลก </span>
-                      <span>enjoy life, enjoy eating! </span>
-                    </div>
-                  </td>
-                  <td>
-                    <div class='header-right' >
-                      
-                      <span><input></span>  
-                      <span><button>ค้นหา</button> </span>
-                    </div>
-                  </td>
-                </tr>
-              </table>
+          <!-- <div>prefer to design as a table</div> -->
+          <div class='grid-wrapper'>
+            <div class='grid'>
+              <div class='grid-text-container'>
+                <div class='ghost-child'></div>
+                <div class='grid-text'>
+                  <p>I could talk food all day.</p>
+                  <p>I love good food.</p>
+                  <p class='grid-text-name'>--Tom Brady</p>
+                </div>
+              </div>
             </div>
-          </td>
-        </tr>
-
-        <!-- menu bar -->
-        <tr>
-          <td>
-            <div class='site-div menu-bar'>
-                <ul>
-
-                  <li><a>เกี่ยวกับเรา</a></li>
-                  <li><a>ภาพอาหาร</a></li>
-                  <li><a>หน้าหลัก</a></li>
-                </ul>
+            <div class='grid'>
+              <div class='grid-img-wrapper'>
+                <img src="res/grid-lamp-steak.jpg" />
+              </div>
+              <div class='grid-hover'>
+                <h2>
+                  Lamp Steak
+                </h2>
+                <p>
+                  &#x2665; 4.8/5
+                </p>
+              </div>
             </div>
-          </td>
-        </tr>
-
-        <!-- front key visual -->
-        <tr>
-          <td>
-            <div class='rectangle'>
-              <img src='res/front-header.png'/>
-              <div class='right-box'></div>
-              <div class='left-box'></div>
+            <div class='grid'>
+              <div class='grid-img-wrapper'>
+                <img src="res/grid-cheesy-pizza.jpg" />
+              </div>
+              <div class='grid-hover'>
+                <h2>
+                  Cheesy Pizza
+                </h2>
+                <p>
+                  &#x2665; 4.6/5
+                </p>
+              </div>
             </div>
-          </td>
-        </tr>
-            <!-- front grid -->
-        <tr>
-          <td>
-            <div class='site-div'>
 
-              <!-- <div>prefer to design as a table</div> -->
-
-              <div class='grid-wrapper'>
-                <div class='grid-content'>
-                  <p>some text</p>
-                    <p>some text</p>
-                </div>
+            <div class='grid'>
+              <div class='grid-img-wrapper'>
+                <img src="res/grid-tempura.jpg" />
               </div>
-
-              <div class='grid-wrapper'>
-                <div class='grid-content'>
-
-                </div>
+              <div class='grid-hover'>
+                <h2>
+                  Tempura
+                </h2>
+                <p>
+                  &#x2665; 4.4/5
+                </p>
               </div>
-
-              <div class='grid-wrapper'>
-                <div class='grid-content'>
-
-                </div>
-              </div>
-
-              <div class='grid-wrapper'>
-                <div class='grid-content'>
-
-                </div>
-              </div>
-
-              <div class='grid-wrapper'>
-                <div class='grid-content'>
-
-                </div>
-              </div>
-
-              <div class='grid-wrapper'>
-                <div class='grid-content'>
-
-                </div>
-              </div>
-
-              <div class='grid-wrapper'>
-                <div class='grid-content'>
-
-                </div>
-              </div>
-
-              <div class='grid-wrapper'>
-                <div class='grid-content'>
-
-                </div>
-              </div>
-
-              <div class='grid-wrapper'>
-                <div class='grid-content'>
-
-                </div>
-              </div>
-
             </div>
-          </td>
-        </tr>
+            <div class='grid'>
+              <div class='grid-img-wrapper'>
+                <img src="res/grid-unagi2.jpg" />
+              </div>
+              <div class='grid-hover'>
+                <h2>
+                  Unagi
+                </h2>
+                <p>
+                  &#x2665; 4.7/5
+                </p>
+              </div>
+            </div>
+            <div class='grid'>
+              <div class='grid-text-container'>
+                <div class='ghost-child'></div>
+                <div class='grid-text'>
+                  <p>I am still not a fussy.</p>
+                  <p>eater, although I do.</p>
+                  <p>enjoy good food.</p>
+                  <p class='grid-text-name'>--Yves Chauvin</p>
+                </div>
+              </div>
+            </div>
 
-        <tr>
-          <td>
-            <div class='site-div'>footer</div>
-          </td>
-        </tr>
-      </table>
-    </body>
+            <div class='grid'>
+              <div class='grid-img-wrapper'>
+                <img src="res/grid-ramen2.jpg" />
+              </div>
+              <div class='grid-hover'>
+                <h2>
+                  Ramen
+                </h2>
+                <p>
+                  &#x2665; 4.4/5
+                </p>
+              </div>
+            </div>
+            <div class='grid'>
+              <div class='grid-text-container'>
+                <div class='ghost-child'></div>
+                <div class='grid-text'>
+                  <p>Your words are my food,</p>
+                  <p>Your breath my wine.</p>
+                  <p>You are everything to me.</p>
+                  <p class='grid-text-name'>--Sarah Bernhardt</p>
+                </div>
+              </div>
+            </div>
+            <div class='grid'>
+              <div class='grid-img-wrapper'>
+                <img src="res/grid-beer.jpg" />
+              </div>
+              <div class='grid-hover'>
+                <h2>
+                  Beer
+                </h2>
+                <p>
+                  &#x2665; 4.8/5
+                </p>
+              </div>
+            </div>
+
+          </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <div class='site-div'>
+          <div class = 'footer'>
+            <img src="res/facebook-icon.png"/>
+            <p class='footer-copy'>&copy; 2017 กินแหลก : Anakin Skywalker</p>
+            <p>All photos are from author's personal collection</p>
+            <p>Quotes are from <u>www.brainyquote.com<u></p>
+          </div>
+          
+        </div>
+      </td>
+    </tr>
+  </table>
+</body>
+
 </html>

@@ -1,0 +1,42 @@
+
+            
+
+            /*debug*/
+            .rectangle{
+              position: relative;
+              width: 100%;
+              background-color: black;
+              height: 200px;
+              margin-bottom: 20px;
+            }
+
+            .site-div{
+                /*background-color:gray;*/
+                margin: auto;
+                /*width: px;*/
+                /*display: block;*/
+                border: dashed 1px;
+                position: relative;
+                margin-top: 0px;
+                margin-bottom: 20px;
+                max-width: 640px;
+                min-width: 400px;
+            }
+
+            .front-site-div{
+              background: black;
+              width: 100%;
+            }
+
+            .site-logo{
+              display: block;
+              font-size: 30px;
+            }
+
+            .search{
+                position: absolute;
+            }
+
+            .header-table{
+              width: 100%
+            }
